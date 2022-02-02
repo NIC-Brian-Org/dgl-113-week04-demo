@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="examples.css" />
+    <title>Lesson 9 Examples</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/img0.jpg" alt="Header image" />
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="evthandling.html">E. Handling Options.</a>
+        </li>
+        <li>
+          <a href="evtobject.html">EvtObj& EH Delegation</a>
+        </li>
+        <li>
+          <a href="evtload.html">window load Event</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <h1>Evt Obj and Evt Handling Delegation</h1>
+      <div id="buttons">
+        <button id="button1">Evt Target </button> 
+        <button id="button2">Change Target Property</button>
+        <!--button id="button3">Evt H. Delegation</button-->
+     </div>
+     <section id="section1">
+      <h3>Today's to do list - School</h3>
+      <p>Click on a list item to see the event delegation effect. <br> The html code structure is section->ul->li</p>
+      <ul>
+        <li
+          id="firstLi"
+         >
+          Attend online class
+        </li>
+        <li id="secondLi" >
+          Meet with my group
+        </li>
+        <li id="thirdLi" >
+          Work on assignments
+        </li>
+      </ul>
+    </section>
+    <section id="section2">
+      <h3>Today's to do list - Chores</h3>
+      <p>Use this list for your own practice.</p>
+      <ul>
+        <li>Clean the rooms</li>
+        <li>Do laundry</li>
+        <li>Prepare meals</li>
+      </ul>
+    </section>
+  </main>    <footer id="footer">footer of the page</footer>
+    <script src="evtobject.js"></script>
+  </body>
+</html>

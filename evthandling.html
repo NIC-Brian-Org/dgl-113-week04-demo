@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This page is used to illustrate the following:
+      a) using 3 buttons to show 3 options for event handling
+      b) using a list to show event propagation
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="examples.css" />
+    <title>Lesson 9 Examples</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/img0.jpg" alt="Header image" />
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="evthandling.html">E. Handling Options.</a>
+        </li>
+        <li>
+          <a href="evtobject.html">EvtObj& EH Delegation</a>
+        </li>
+        <li>
+          <a href="evtload.html">window load Event</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <h2>Event Handling Options</h2>
+      <div id="buttons">
+        <button  id="button1"
+          onclick="alert('This message is produced by an inline alert. \nYou can also replace the alert() with a call to your own function!');"
+        >
+          Inline E.H
+        </button>
+        <!--click event on the next 2 buttons are handled in external JS code.-->
+        <button id="button2">DOM Element Property</button>
+        <button id="button3">Event Listener</button>
+      </div>
+      <section onclick="alert('Click event occurred on section.');">
+        <h3>Today's to do list - School</h3>
+        <p>
+          Click on a list item to see the event propagation. <br />
+          The html code structure is section->ul->li
+        </p>
+        <ul onclick="alert('Click event occurred on ul.');">
+          <li id="firstLi" onclick="alert('Click event occurred on li.');">
+            Attend online class
+          </li>
+          <li id="secondLi" onclick="alert('Click event occurred on li.');">
+            Meet with my group
+          </li>
+          <li id="thirdLi" onclick="alert('Click event occurred on li.');">
+            Work on assignments
+          </li>
+        </ul>
+      </section>
+      <section id="section2">
+        <h3>Today's to do list - Chores</h3>
+        <p>Use this list for your own practice.</p>
+        <ul>
+          <li>Clean the rooms</li>
+          <li>Do laundry</li>
+          <li>Prepare meals</li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">footer of the page</footer>
+    <script src="evthandling.js"></script>
+  </body>
+</html>
